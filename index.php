@@ -10,3 +10,6 @@
 	<p><a href='decHex.php'>Convertir de decimal a hexadecimal</a></p>	
 	<p><a href='hexDec.php'>Convertir de hexadecimal a decimal</a></p>
 
+
+
+

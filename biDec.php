@@ -1,5 +1,5 @@
 <?php
-
+	
 	echo "Convertir de binario a Decimal: ";
 
 	if(!$_POST){
