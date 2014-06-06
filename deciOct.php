@@ -1,26 +1,21 @@
 <?php
 
-	echo "Convertir de decimal a octal: ";
+	include("cabecera.php");
+
+	?>
+
+	</br>
+	<section class="row">
+	<article class="row panel radius">
+
+		<?php
+		include("funciones.php");
+		mostrar("decimal", "octal", "deciOct.php", "decoct");
+		?>
 
 
-	if(!$_POST){
-		echo "<p>Ingresar tu nombre y numero decimal para convertir a octal.</p>";
-		include("formularioDeciOct.php");	
+	</article>
+	</section>
 
-	}else{
-		if($_POST["nombre"]=="" || $_POST["decimal"]==""){
-			echo"<p>No pueden quedar vacios los campos.</p>";
-			include("formularioDeciOct.php");
-		}else{
-
-
-			$octal= decoct($_POST['decimal']);
-			echo "<p>Su conversion de decimal a octal <b>" . $_POST['nombre'] . " </b>es: " . $octal . "</p>";
-			echo '<a href="index.php">Regresar</a>';
-
-		}
-	}
-
-  
-
-?>
+	<?php
+	include("pie.php");

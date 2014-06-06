@@ -1,26 +1,21 @@
 <?php
 
-	echo "Convertir de hexadecimal a decimal: ";
+	include("cabecera.php");
+
+	?>
+
+	</br>
+	<section class="row">
+	<article class="row panel radius">
+
+		<?php
+		include("funciones.php");
+		mostrar("hexadecimal", "decimal", "hexDec.php", "hexdec");
+		?>
 
 
-	if(!$_POST){
-		echo "<p>Ingresar tu nombre y numero hexadecimal para convertir a decimal.</p>";
-		include("formularioHexDec.php");	
+	</article>
+	</section>
 
-	}else{
-		if($_POST["nombre"]=="" || $_POST["hexadecimal"]==""){
-			echo"<p>No pueden quedar vacios los campos.</p>";
-			include("formularioHexDec.php");
-		}else{
-
-
-			$decimal= hexdec($_POST['hexadecimal']);
-			echo "<p>Su conversion de hexadecimal a decimal <b>" . $_POST['nombre'] . " </b>es: " . $decimal . "</p>";
-			echo '<a href="index.php">Regresar</a>';
-
-		}
-	}
-
-  
-
-?>
+	<?php
+	include("pie.php");
