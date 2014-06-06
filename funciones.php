@@ -13,6 +13,7 @@ function formulario($ruta, $tipo){
 	   <p><input type="submit" /></p>
 	</form>
 <?php
+}
 
 function mostrar($conv, $to, $ruta, $func){
 		echo "Convertir de " . $conv . " a " . $to . ": ";
